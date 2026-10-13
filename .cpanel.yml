@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tibbiavadanliqaz/public_html/
+    - git archive HEAD | tar -x -C "$DEPLOYPATH"
+    - while IFS= read -r f; do [ -n "$f" ] && rm -f "$DEPLOYPATH$f"; done < .deploy-remove.txt
