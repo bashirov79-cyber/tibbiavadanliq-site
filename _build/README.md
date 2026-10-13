@@ -5,3 +5,4 @@
 - Dəyişiklik olmadan işə salsan, sayt hərfi-hərfinə eyni qalır.
 - Silinən səhifələrin yolunu .deploy-remove.txt-ə yaz (serverdən də silinsin).
 - Dərc: push → cPanel › Git Version Control › Manage › Pull or Deploy › Update from Remote → Deploy HEAD Commit.
+- Kataloqdan yeniləmə: python3 _build/sync_from_catalog.py <medishop-kataloq qovluğu> report | make [placement.json] — sonra build.
